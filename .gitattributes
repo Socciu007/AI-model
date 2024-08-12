@@ -1,3 +1,2 @@
 *.safetensors filter=lfs diff=lfs merge=lfs -text
-env
 *.pth filter=lfs diff=lfs merge=lfs -text
