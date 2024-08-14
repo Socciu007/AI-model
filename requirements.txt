@@ -10,8 +10,8 @@ bitsandbytes
 peft
 trl
 wandb
-flask
 speechrecognition
 sentencepiece
-pydub
 soundfile
+flask
+waitress
