@@ -1,0 +1,14 @@
+{
+  "name": "audio.record",
+  "version": "1.0.0",
+  "main": "record.js",
+  "description": "Real-time audio recording",
+  "type": "module",
+  "dependencies": {
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "node-audiorecorder": "^3.0.0",
+    "node-record-lpcm16": "^1.0.1",
+    "path": "^0.12.7"
+  }
+}
