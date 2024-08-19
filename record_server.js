@@ -1,5 +1,5 @@
 import express from 'express';
-import record from 'node-record-lpcm16';
+import recorder from 'node-record-lpcm16';
 import fs from 'fs';
 import path from 'path';
 
@@ -8,24 +8,24 @@ const port = 3000;
 
 // Endpoint để ghi âm thanh
 app.post('/record', (req, res) => {
-  const filePath = path.join(__dirname, 'data', 'audio', 'audio.wav');
+  const filePath = path.join('/data', 'audio', 'audio.wav');
 
   // Tạo luồng ghi âm
   const fileStream = fs.createWriteStream(filePath, { encoding: 'binary' });
 
   // Bắt đầu ghi âm
-  const recording = record.start({
-    sampleRateHertz: 16000,
-    threshold: 0,
-    verbose: false,
-    recordProgram: 'sox', // Sử dụng 'sox' vì 'rec' không hỗ trợ trên Windows
-  });
-
-  recording.pipe(fileStream);
+  recorder.record({
+    sampleRate: 16000,
+    threshold: 0.5,
+    audioType: 'wav',
+    recorder: 'sox', // Sử dụng 'sox' vì 'rec' không hỗ trợ trên Windows
+  })
+    .stream()
+    .pipe(fileStream)
 
   // Dừng ghi âm sau 5 giây
   setTimeout(() => {
-    record.stop();
+    recorder.stop();
     fileStream.end();
 
     // Trả về file âm thanh đã ghi

@@ -211,6 +211,8 @@ def s2st():
 @app.route('/s2tt', methods=['POST'])
 def s2tt():
   data = request.json
+  print('oke')
+  print(data)
   input_audio_file = data['input_audio_file']
   target_language = data['target_language']
   
