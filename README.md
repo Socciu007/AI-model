@@ -27,3 +27,8 @@ First, create and activate a new conda environment.
 ```bash
 waitress-serve seamless_server:app
 ```
+Or
+
+```bash
+python seamless_server.py
+```

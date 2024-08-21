@@ -1,48 +1,91 @@
+import { spawn } from 'child_process';
 import express from 'express';
-import recorder from 'node-record-lpcm16';
-import fs from 'fs';
-import path from 'path';
+import http from 'http';
 
 const app = express();
-const port = 3000;
+let soxProcess = null;
+let fileName = null;
 
-// Endpoint để ghi âm thanh
-app.post('/record', (req, res) => {
-  const filePath = path.join('/data', 'audio', 'audio.wav');
+// Func send audio chunks to the server
+const sendAudioChunk = (data, isFinalChunk = false) => {
+  const options = {
+    hostname: 'localhost',
+    port: 5000,
+    path: '/receive-audio',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/octet-stream',
+      'File-Name': fileName,
+      ...(isFinalChunk && { 'Recording-Complete': 'true' }), // Add custom header if it's the final chunk
+    },
+  };
 
-  // Tạo luồng ghi âm
-  const fileStream = fs.createWriteStream(filePath, { encoding: 'binary' });
-
-  // Bắt đầu ghi âm
-  recorder.record({
-    sampleRate: 16000,
-    threshold: 0.5,
-    audioType: 'wav',
-    recorder: 'sox', // Sử dụng 'sox' vì 'rec' không hỗ trợ trên Windows
-  })
-    .stream()
-    .pipe(fileStream)
-
-  // Dừng ghi âm sau 5 giây
-  setTimeout(() => {
-    recorder.stop();
-    fileStream.end();
-
-    // Trả về file âm thanh đã ghi
-    res.sendFile(filePath, (err) => {
-      if (err) {
-        console.error(err);
-        res.status(500).send('Error sending file');
-      }
-
-      // Xóa file sau khi gửi xong
-      fs.unlink(filePath, (err) => {
-        if (err) console.error(err);
+  const req = http.request(options, (res) => {
+    res.setEncoding('utf8');
+    res.on('data', (chunk) => {
+      console.log({
+        status: res.statusCode,
+        message: chunk,
       });
     });
-  }, 5000); // Thay đổi thời gian ghi âm tùy thuộc vào nhu cầu
+  });
+
+  req.on('error', (e) => {
+    console.error(`Problem with request: ${e.message}`);
+  });
+
+  req.write(data);
+  req.end();
+};
+
+// Func start the recording
+const startCapture = () => {
+  soxProcess = spawn('sox', ['-t', 'waveaudio', '0', '-t', 'wav', '-']);
+  fileName = Math.random().toString(36).replace(/[^0-9a-zA-Z]+/g, '') + '.wav';
+
+  soxProcess.stdout.on('data', (data) => {
+    console.log('Captured audio chunk:', data);
+    // 将录制的音频数据发送到另一台服务器
+    sendAudioChunk(data);
+  });
+
+  // 监听sox的标准错误输出
+  soxProcess.stderr.on('data', (data) => {
+    console.error('Error:', data.toString());
+  });
+
+  // 监听sox进程的退出事件
+  soxProcess.on('close', (code) => {
+    console.log(`sox process exited with code ${code}`);
+  });
+};
+
+// Func stop the recording
+const stopCapture = () => {
+  if (soxProcess) {
+    soxProcess.kill();
+    soxProcess = null;
+    console.log('Audio capture stopped');
+
+    // Send final empty chunk with Recording-Complete header
+    sendAudioChunk(Buffer.alloc(0), true);
+  }
+};
+
+
+// Define routes using Express
+app.post('/start-capture', (req, res) => {
+  startCapture();
+  res.send('Audio capture started');
 });
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
+app.post('/stop-capture', (req, res) => {
+  stopCapture();
+  res.send('Audio capture stopped');
+});
+
+// Start the Express server
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
 });

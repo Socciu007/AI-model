@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from transformers import (
   SeamlessM4TModel,
   AutoProcessor
@@ -7,6 +8,7 @@ import torch
 import numpy as np
 import torchaudio
 import gradio as gr
+import scipy.io.wavfile as wavfile
 
 from lang_list_pkg import (
   TEXT_SOURCE_LANGUAGE_NAMES,
@@ -18,11 +20,13 @@ from lang_list_pkg import (
 )
 
 app = Flask(__name__)
+CORS(app)
 
 # Load the model and tokenizer
-model_name= "./seamless_m4t_model"
-processor = AutoProcessor.from_pretrained(model_name)
-model = SeamlessM4TModel.from_pretrained(model_name)
+local_model= "./seamless_m4t_model" # Load the model if it exists in local
+model_name= "facebook/hf-seamless-m4t-medium"
+processor = AutoProcessor.from_pretrained(local_model)
+model = SeamlessM4TModel.from_pretrained(local_model)
 
 TASK_NAMES = [
   "S2ST (Speech to Speech translation)",
@@ -194,73 +198,103 @@ def process_asr(
     target_language=target_language
   )
 
-@app.route('/s2st', methods=['POST'])
-def s2st():
-  data = request.json
-  input_audio_file = data['input_audio_file']
-  target_language = data['target_language']
+# Endpoint to transform audio
+# @app.route('/s2st', methods=['POST'])
+# def s2st():
+#   data = request.json
+#   input_audio_file = data['input_audio_file']
+#   target_language = data['target_language']
   
-  audio, text_output = process_s2st(input_audio_file, target_language)
-  res = {
-    'audio_sample_rate': audio[0] if audio else None,
-    'audio_wareform': audio[1].tolist() if audio else None,
-    'text_output': text_output
-  }
-  return jsonify(res)
+#   audio, text_output = process_s2st(input_audio_file, target_language)
+#   res = {
+#     'audio_sample_rate': audio[0] if audio else None,
+#     'audio_wareform': audio[1].tolist() if audio else None,
+#     'text_output': text_output
+#   }
+#   return jsonify(res)
 
-@app.route('/s2tt', methods=['POST'])
-def s2tt():
-  data = request.json
-  print('oke')
-  print(data)
-  input_audio_file = data['input_audio_file']
-  target_language = data['target_language']
+# @app.route('/s2tt', methods=['POST'])
+# def s2tt():
+#   data = request.json['data']
+#   print('oke')
+#   print(data)
+#   input_audio_file = data['input_audio_file']
+#   target_language = data['target_language']
   
-  _, text_output = process_s2tt(input_audio_file, target_language)
-  res = {
-    'text_output': text_output
-  }
-  return jsonify(res)
+#   _, text_output = process_s2tt(input_audio_file, target_language)
+#   res = {
+#     'text_output': text_output
+#   }
+#   return jsonify(res)
 
-@app.route('/t2st', methods=['POST'])
-def t2st():
-  data = request.json
-  input_text = data['input_text']
-  source_language = data['source_language']
-  target_language = data['target_language']
+# @app.route('/t2st', methods=['POST'])
+# def t2st():
+#   data = request.json
+#   input_text = data['input_text']
+#   source_language = data['source_language']
+#   target_language = data['target_language']
   
-  audio, text_output = process_t2st(input_text, source_language, target_language)
-  res = {
-    'audio_sample_rate': audio[0] if audio else None,
-    'audio_wareform': audio[1].tolist() if audio else None,
-    'text_output': text_output
-  }
-  return jsonify(res)
+#   audio, text_output = process_t2st(input_text, source_language, target_language)
+#   res = {
+#     'audio_sample_rate': audio[0] if audio else None,
+#     'audio_wareform': audio[1].tolist() if audio else None,
+#     'text_output': text_output
+#   }
+#   return jsonify(res)
 
-@app.route('/t2tt', methods=['POST'])
-def t2tt():
-  data = request.json
-  input_text = data['input_text']
-  source_language = data['source_language']
-  target_language = data['target_language']
+# @app.route('/t2tt', methods=['POST'])
+# def t2tt():
+#   data = request.json
+#   input_text = data['input_text']
+#   source_language = data['source_language']
+#   target_language = data['target_language']
   
-  _, text_output = process_t2tt(input_text, source_language, target_language)
-  res = {
-    'text_output': text_output
-  }
-  return jsonify(res)
+#   _, text_output = process_t2tt(input_text, source_language, target_language)
+#   res = {
+#     'text_output': text_output
+#   }
+#   return jsonify(res)
 
-@app.route('/asr', methods=['POST'])
-def asr():
-  data = request.json
-  input_audio_file = data['input_audio_file']
-  target_language = data['target_language']
+# @app.route('/asr', methods=['POST'])
+# def asr():
+#   data = request.json
+#   input_audio_file = data['input_audio_file']
+#   target_language = data['target_language']
    
-  _, text_output = process_asr(input_audio_file, target_language)
-  res = {
-    'recognized_text': text_output
-  }
-  return jsonify(res)
+#   _, text_output = process_asr(input_audio_file, target_language)
+#   res = {
+#     'recognized_text': text_output
+#   }
+#   return jsonify(res)
+
+# Endpoint to receive audio and translate audio to target language or audio
+@app.route('/receive-audio', methods=['POST'])
+def receive_audio():
+    file_name = request.headers.get('File-Name')
+    if not file_name:
+        return "File name header missing", 400
+
+    file_path = f'./audio/receive/{file_name}'
+    with open(file_path, 'ab') as f:
+        f.write(request.data)
+
+    print(f"Received and saved chunk to {file_path}")
+    
+    # After receiving the full audio file, translate it
+    if request.headers.get('Recording-Complete'):
+      print("Starting translation")
+      
+      # Can translate audio, You can change the language you want to translate. Ex: Mandarin Chinese
+      audio, text_output = process_s2st(file_path, "English")
+      
+      print(f"Translate: {text_output}")
+      
+      # Save the audio data to a .wav file
+      wavfile.write(f'./audio/transform/{file_name}', int(audio[0]), audio[1])
+      
+      return text_output, 200
+
+    return "Audio chunk received", 200
 
 if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=5000, debug=True)
+  app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False)
