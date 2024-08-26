@@ -12,8 +12,12 @@ Hyperparameters are set before training starts, can be tuned through grid search
 - Not a part of the trained model and hence the values are not saved
 - Independent of the dataset
 Load data --> Build Hyper Model with Hyper Parameter --> Select Tuner/Grid Search --> Tuning to get best HP --> Build model with best HP --> Train model with data
-## Model: llm3, seamless
+## Model: llm3, seamlessM4T
+### 1. Llama3
+Llama3 is a large language model (LLM) developed by Meta based on transformer architecture. Llama 3 is designed to serve a variety of purposes in the field of natural language processing (NLP).
 
+### 2. SeamlessM4T
+SeamlessM4T is a multimedia AI model developed by Meta to support multilingual speech recognition and translation. This is one of the advanced models designed to handle a variety of language and audio related tasks, including: Speech-to-speech translation (S2ST), Speech-to-text translation (S2TT), Text-to-speech translation (T2ST), Text-to-text translation(T2TT) and Automatic speech recognition (ASR) 
 ## Quick SeamlessM4T Demo
 This repository provides a quick demonstration of using a SeamlessM4T model for real-time speech translation. The project includes steps to set up the environment, download the necessary model weights, and run the demo.
 
