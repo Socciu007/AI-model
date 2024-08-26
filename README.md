@@ -1,9 +1,9 @@
 ## Table of Contents
 - [Hyper Parameter Tuning](#hyper-parameter-tuning)
-- [Model: llm3, seamless](#model-llm3-seamless)
+- [Model: llm3, seamless](#model-llm3-seamlessM4T)
   - [1. Llama3](#1-llama3)
-  - [2. SeamlessM4T](#2-seamless)
-- [Quick Demo](#quick-demo)
+  - [2. SeamlessM4T](#2-seamlessM4T)
+- [Quick SeamlessM4T Demo](#quick-SeamlessM4T-demo)
   - [1. Installation](#1-installation)
   - [2. Run the demo Seamless server](#2-run-the-demo-seamless-server)
 
