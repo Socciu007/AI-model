@@ -2,4 +2,5 @@ env
 wandb
 tuner_dir_01
 seamless_m4t_model
+llm_model
 node_modules
