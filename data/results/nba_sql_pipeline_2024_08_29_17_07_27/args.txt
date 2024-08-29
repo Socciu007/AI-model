@@ -1,0 +1,5 @@
+{'gold_file_name': 'gold-test-set.jsonl',
+ 'max_examples': 100,
+ 'num_to_generate': 10,
+ 'sql_model_name': '6820e678b0aecda564af83155542f568d76dff623c18d32390df6a609c00b5c6',
+ 'training_file_name': 'archive/generated_queries.jsonl'}

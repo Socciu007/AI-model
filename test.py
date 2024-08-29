@@ -11,8 +11,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Configure Celery and Redis
-app.config['CELERY_BROKER_URL'] = 'redis://:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
+app.config['CELERY_BROKER_URL'] = 'redis://:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314/0'
+app.config['CELERY_RESULT_BACKEND'] = 'redis://:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314/0'
 
 celery = Celery(app.name, broker=app.config['CELERY_BROKER_URL'])
 celery.conf.update(app.config)
@@ -66,7 +66,9 @@ def translate():
 @app.route('/status/<task_id>', methods=['GET'])
 def task_status(task_id):
   task = run_model_inference.AsyncResult(task_id)
-  print(task)
+  print("Task status", task.state)
+  print(task.id)
+  print("Task status", task)
   
   if task.state == 'PENDING':
     res = { 'status': 0, 'state': task.state, 'message': 'Task is still in progress...' }
