@@ -1,47 +1,34 @@
-import AudioRecorder from 'node-audiorecorder'
-import fs from 'fs'
-import path from 'path'
+import recorder from 'node-record-lpcm16';
+import fs from 'fs';
 
-// Constants.
-const DIRECTORY = 'audio'
+// Tạo luồng ghi âm vào tệp .wav
+const file = fs.createWriteStream('test.wav', { encoding: 'binary' });
 
-// Create path to write recordings to.
-if (!fs.existsSync(DIRECTORY)) {
-  fs.mkdirSync(DIRECTORY);
-}
+// Cấu hình ghi âm với node-record-lpcm16 sử dụng sox và thiết bị âm thanh
+const recording = recorder.record({
+  sampleRate: 44100,           // Tần số mẫu (44.1 kHz)
+  channels: 2,                 // Số kênh âm thanh (stereo)
+  verbose: true,               // Hiển thị thông tin chi tiết quá trình ghi âm
+  recordProgram: 'sox',        // Chương trình ghi âm được sử dụng là 'sox'
+  device: 'your-device-name',  // Thay thế bằng tên thiết bị âm thanh của bạn
+  audioType: 'wav'             // Định dạng âm thanh đầu ra là wav
+});
 
-// Options is an optional parameter for the constructor call.
-const OPTIONS = {
-  program: 'sox', // Which program to use, either `arecord`, `rec`, or `sox`.
-  device: 'EGM24F100s (HD Audio Driver for Display Audio)', // Recording device to use. Null means default.
-  driver: 'AcxHdAudio.sys', // Recording driver to use. Null means default.
-  bits: 16, // Sample size. (only for `rec` and `sox`)
-  channels: 2, // Channel count.
-  encoding: 'signed-integer', // Audio encoding format. (only for `rec` and `sox`)
-  rate: 16000, // Sample rate. Higher rate for better quality.
-  type: 'wav', // Format type.
-}
+// Ghi luồng âm thanh vào tệp
+recording.stream().pipe(file);
 
-// Initialize recorder and file stream.
-const recorder = new AudioRecorder(OPTIONS, console);
-
-// Create file path with random name.
-const fileName = path.join(
-  DIRECTORY,
-  Math.random()
-    .toString(36)
-    .replace(/[^0-9a-zA-Z]+/g, '')
-    .concat('.wav')
-);
-console.log('Writing new recording file at:', fileName);
-
-// Create write stream.
-const fileStream = fs.createWriteStream(fileName);
-
-// Start and write to the file.
-recorder.start().stream().pipe(fileStream)
-
-// Stop after 5 seconds.
+// Dừng ghi âm sau 3 giây
 setTimeout(() => {
-  recorder.stop();
-}, 5000);
+  console.log('Stopping recording...');
+  recording.stop();  // Dừng ghi âm và kết thúc tiến trình
+}, 3000);
+
+// // Xử lý sự kiện lỗi
+// recording.on('error', (err) => {
+//   console.error('Recording error:', err);
+// });
+
+// // Xử lý khi quá trình ghi âm kết thúc
+// recording.on('end', () => {
+//   console.log('Recording finished.');
+// });
