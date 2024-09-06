@@ -9,12 +9,11 @@ huggingface_hub
 bitsandbytes
 peft
 trl
-wandb
-speechrecognition
-sentencepiece
-soundfile
+# Seamless
 flask
 flask-cors
 waitress
 watchdog
 celery==5.4.0
+python-dotenv~=1.0.1
+lamini==3.0.5
