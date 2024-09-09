@@ -18,6 +18,10 @@ Load data --> Build Hyper Model with Hyper Parameter --> Select Tuner/Grid Searc
 ### 1. Llama3
 Llama3 is a large language model (LLM) developed by Meta based on transformer architecture. Llama 3 is designed to serve a variety of purposes in the field of natural language processing (NLP).
 
+```bash
+celery -A llm_server.celery worker --loglevel=info --concurrency=2
+```
+celery -A llm_server.celery worker --loglevel=info --concurrency=1
 ### 2. SeamlessM4T
 SeamlessM4T is a multimedia AI model developed by Meta to support multilingual speech recognition and translation. This is one of the advanced models designed to handle a variety of language and audio related tasks, including: Speech-to-speech translation (S2ST), Speech-to-text translation (S2TT), Text-to-speech translation (T2ST), Text-to-text translation(T2TT) and Automatic speech recognition (ASR) 
 ## Quick SeamlessM4T Demo
