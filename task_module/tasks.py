@@ -23,7 +23,7 @@ def execute_llm(user_prompt):
   except Exception as e:
     return str(e)
   
-# Celery task for addition
+# Celery task for test
 @celery.task()
 def add_numbers(x, y):
   return x + y

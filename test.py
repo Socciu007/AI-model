@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from celery.result import AsyncResult
 from utils_llm import make_llama_3_prompt
 from task_module.celery_config import celery
 from task_module.tasks import add_numbers
@@ -9,9 +8,13 @@ app = Flask("test")
 CORS(app)
 
 # Configure Celery and Redis
-app.config['CELERY_BROKER_URL'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
-app.config['CELERY_RESULT_BACKEND'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
-# app.config['broker_connection_retry_on_startup'] = True
+app.config['broker_url'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
+app.config['result_backend'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
+app.config['broker_connection_retry_on_startup'] = True
+app.config['result_backend_transport_options'] = {
+  'master_name': "mymaster",
+  'retry_policy': {'timeout': 5.0}
+}
 # app.config['include'] = ['task_module.tasks']
 celery.conf.update(app.config)
 
@@ -21,7 +24,7 @@ def add_task():
   x = 10
   y = 30
   task = add_numbers.apply_async(args=[x, y])
-  return jsonify({'task_id': task.id}), 202
+  return jsonify({'task_id': task.id}), 200
 
 # Route to handle model inference requests
 @app.route('/process', methods=['POST'])
@@ -41,6 +44,8 @@ def generate():
 @app.route("/status/<task_id>")
 def task_status(task_id):
   task = add_numbers.AsyncResult(task_id)
+  # Revoke the task
+  task.revoke(terminate=True, signal='SIGKILL')
   if task.ready():
     result = task.result
   else:
