@@ -1,21 +1,22 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from utils_llm import make_llama_3_prompt
 from task_module.celery_config import celery
-from task_module.tasks import add_numbers
+from task_module.tasks import add_numbers, execute_llm
 
 app = Flask("test")
 CORS(app)
 
-# Configure Celery and Redis
-app.config['broker_url'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
-app.config['result_backend'] = 'redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314'
-app.config['broker_connection_retry_on_startup'] = True
-app.config['result_backend_transport_options'] = {
-  'master_name': "mymaster",
-  'retry_policy': {'timeout': 5.0}
-}
-# app.config['include'] = ['task_module.tasks']
+# Cấu hình Celery và Redis
+app.config.update(
+    CELERY_BROKER_URL='redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314',
+    CELERY_RESULT_BACKEND='redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314',
+    CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP=True,
+    result_backend_transport_options={
+        'master_name': "mymaster",
+        'retry_policy': {'timeout': 5.0}
+    }
+)
+
 celery.conf.update(app.config)
 
 # Create a simple route
@@ -43,14 +44,14 @@ def generate():
 # Route to check task status
 @app.route("/status/<task_id>")
 def task_status(task_id):
-  task = add_numbers.AsyncResult(task_id)
-  # Revoke the task
-  task.revoke(terminate=True, signal='SIGKILL')
-  if task.ready():
-    result = task.result
+  task = celery.AsyncResult(task_id)
+  if task.state == 'PENDING':
+    response = {'state': task.state, 'status': 'Pending...'}
+  elif task.state != 'FAILURE':
+    response = {'state': task.state, 'status': str(task.info)}
   else:
-    result = "Running..."
-  return jsonify({"status": 1, "message": result}), 200
+    response = {'state': task.state, 'status': str(task.info)}
+  return jsonify(response), 200
 
 # Run the Flask app
 if __name__ == "__main__":
