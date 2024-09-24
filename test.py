@@ -2,30 +2,41 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from task_module.celery_config import celery
 from task_module.tasks import add_numbers, execute_llm
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 app = Flask("test")
 CORS(app)
 
-# Cấu hình Celery và Redis
+# Config Celery and Redis
 app.config.update(
-    CELERY_BROKER_URL='redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314',
-    CELERY_RESULT_BACKEND='redis://default:A3HP3clCHRuqnqW71pGK1s4AvJGKjgRu@redis-13314.c1.asia-northeast1-1.gce.redns.redis-cloud.com:13314',
-    CELERY_BROKER_CONNECTION_RETRY_ON_STARTUP=True,
-    result_backend_transport_options={
-        'master_name': "mymaster",
-        'retry_policy': {'timeout': 5.0}
-    }
+  broker_url=os.getenv('REDIS_URL'),
+  broker_read_url=os.getenv('REDIS_URL'),
+  broker_write_url=os.getenv('REDIS_URL'),
+  result_backend=os.getenv('REDIS_URL'),
+  broker_connection_retry_on_startup=True,
+  result_backend_transport_options={
+    'master_name': "mymaster",
+    'retry_policy': {'timeout': 5.0}
+  }
 )
-
 celery.conf.update(app.config)
-
+print(celery.conf)
 # Create a simple route
-@app.route('/add')
+@app.route('/add', methods=['POST'])
 def add_task():
-  x = 10
-  y = 30
+  data = request.json
+  x = data.get('x', 10)
+  y = data.get('y', 30)
+  
   task = add_numbers.apply_async(args=[x, y])
-  return jsonify({'task_id': task.id}), 200
+  
+  return jsonify({
+    'task_id': task.id,
+    'status': 'Task đã được gửi',
+    'message': f'Đang thực hiện phép cộng {x} + {y}'
+  }), 202
 
 # Route to handle model inference requests
 @app.route('/process', methods=['POST'])
@@ -46,11 +57,13 @@ def generate():
 def task_status(task_id):
   task = celery.AsyncResult(task_id)
   if task.state == 'PENDING':
-    response = {'state': task.state, 'status': 'Pending...'}
-  elif task.state != 'FAILURE':
-    response = {'state': task.state, 'status': str(task.info)}
+    response = {'state': task.state, 'status': 'Đang chờ xử lý...'}
+  elif task.state == 'SUCCESS':
+    response = {'state': task.state, 'status': 'Hoàn thành', 'result': task.result}
+  elif task.state == 'FAILURE':
+    response = {'state': task.state, 'status': 'Thất bại', 'error': str(task.info)}
   else:
-    response = {'state': task.state, 'status': str(task.info)}
+    response = {'state': task.state, 'status': 'Đang xử lý...', 'info': str(task.info)}
   return jsonify(response), 200
 
 # Run the Flask app

@@ -1,9 +1,11 @@
 from .celery_config import celery
 from utils_llm import make_llama_3_prompt
 import lamini
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-lamini.api_key = "ad3d62932bc25b48963dd3413dd94cb3414dd650fc47f735704badeb56cdf9ca"
-
+lamini.api_key = os.getenv('LAMINI_API_KEY')
 llm = lamini.Lamini(model_name="meta-llama/Meta-Llama-3-8B-Instruct")
 
 @celery.task()
@@ -19,3 +21,9 @@ def execute_llm(user_prompt):
 @celery.task()
 def add_numbers(x, y):
     return x + y
+
+@celery.task()
+def process_data(data):
+    # Giả sử đây là một tác vụ xử lý dữ liệu phức tạp
+    processed_data = [item.upper() for item in data if isinstance(item, str)]
+    return processed_data
