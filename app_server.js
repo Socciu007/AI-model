@@ -1,8 +1,10 @@
 import { spawn } from 'child_process';
 import express from 'express';
 import http from 'http';
+import zalo from 'zalo-sdk';
 
 const app = express();
+const PORT = 3001;
 let soxProcess = null;
 let fileName = null;
 
@@ -84,8 +86,27 @@ app.post('/stop-capture', (req, res) => {
   res.send('Audio capture stopped');
 });
 
+app.post('/send-message', (req, res) => {
+  // Create a new Zalo instance
+  const zlConfig = {
+    appId: '940104600531434314',
+    redirectUri: 'http://localhost/login/zalo-callback',
+    appSecret: '1bgMx7eaUCETRJ223R0a',
+  };
+  const ZSClient = new zalo.ZaloSocial(zlConfig);
+
+  // Get Access Token by Oauth Code and set value of access_token after you initialize ZaloSocial Instance
+  ZSClient.getAccessTokenByOauthCode(req.body.code)
+    .then((accessToken) => {
+      console.log('Access Token:', accessToken);
+      res.send('Message sent');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+});
+
 // Start the Express server
-const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
