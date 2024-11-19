@@ -1,25 +1,25 @@
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Rio Haina的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO HAINA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANGHAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AALBORG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AALBORG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Aalesund的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALESUND"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AARHUS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AARHUS"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ABBAS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BANDAR ABBAS"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ABIDJAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ABIDJAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ABU DHABI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ABU DHABI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ACAJUTAL,SALVADOR的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ACAJUTLA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ACAJUTLA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ACAJUTLA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADABIYA0的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADABIYA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADDIS ABABA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADDA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADELADIDE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADELAIDE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADEN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ADEN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ADH的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIYADH"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AEJEA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAEJU"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AGADIR的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AGADIR"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AGUA PRIETA (SONORA)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PISAGUA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Ahmedabad的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ICD AHMEDABAD"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AIN SOKHNA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AIN SUKHNA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请问Rio Haina港口的运输费用是多少 What port is this?"}, {"role": "assistant", "content": "RIO HAINA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "麻烦查询SHANGHAI的海运价格 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "想知道AALBORG的货运费用 What port is this?"}, {"role": "assistant", "content": "AALBORG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请帮我查一下Aalesund的运输成本 What port is this?"}, {"role": "assistant", "content": "ALESUND"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "能告诉我AARHUS的集装箱运费吗 What port is this?"}, {"role": "assistant", "content": "AARHUS"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "帮我看看ABBAS要收取多少运费 What port is this?"}, {"role": "assistant", "content": "BANDAR ABBAS"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请查询ABIDJAN的货物运输价格 What port is this?"}, {"role": "assistant", "content": "ABIDJAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "想了解ABU DHABI的海运费用 What port is this?"}, {"role": "assistant", "content": "ABU DHABI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请问ACAJUTAL,SALVADOR的运输费用是多少 What port is this?"}, {"role": "assistant", "content": "ACAJUTLA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "麻烦查询ACAJUTLA的海运价格 What port is this?"}, {"role": "assistant", "content": "ACAJUTLA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请问ADABIYA0的运输费用是多少 What port is this?"}, {"role": "assistant", "content": "ADABIYA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "麻烦查询ADDIS ABABA的海运价格 What port is this?"}, {"role": "assistant", "content": "ADDA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "想知道ADE的货运费用 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请帮我查一下ADELADIDE的运输成本 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "能告诉我ADELAIDE的集装箱运费吗 What port is this?"}, {"role": "assistant", "content": "ADELAIDE"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "帮我看看ADEN要收取多少运费 What port is this?"}, {"role": "assistant", "content": "ADEN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请查询ADH的货物运输价格 What port is this?"}, {"role": "assistant", "content": "RIYADH"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "想了解AEJEA的海运费用 What port is this?"}, {"role": "assistant", "content": "HAEJU"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请问AGADIR的运输费用是多少 What port is this?"}, {"role": "assistant", "content": "AGADIR"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "麻烦查询AGUA PRIETA (SONORA)的海运价格 What port is this?"}, {"role": "assistant", "content": "PISAGUA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "想知道Ahmedabad的货运费用 What port is this?"}, {"role": "assistant", "content": "ICD AHMEDABAD"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "请帮我查一下AIN SOKHNA的运输成本 What port is this?"}, {"role": "assistant", "content": "AIN SUKHNA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AJMAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AJMAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AKITA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AKITA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "AKTAU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AKTOBE"}]}
@@ -33,7 +33,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALEXANDRIA-EGEDK的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALEXANDRIA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALEXANDRIADEKHEILA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALEXANDRIA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALEXANDRIAOLD PORT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALEXANDRIA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALEXANDRIAOLD0 PORT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALEXANDRIA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALEXANDRIAOLD  PORT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALEXANDRIA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALGECIEAS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALGECIRAS"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ALGECIRAS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALGECIRAS"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Alger的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ALGIERS"}]}
@@ -149,7 +149,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BDCGP(non-fabric)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CHITTAGONG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEANR的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ANTWERP"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIHAI(北海)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIHAI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIHAI（北海）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIHAI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIHAI (北海)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIRA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIRA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIRUT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIRUT"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "BEIRUT FREE ZONE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIRUT"}]}
@@ -429,16 +429,17 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(XINGANG)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(三山)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(九江)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JIUJIANG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(顺德)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山(顺德)勒流)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山(顺德)容奇)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三山)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三山港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三水港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山九江)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山南港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山新港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山澜石港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山（顺德）勒流)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山澜石港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山新港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山南港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三山)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山九江)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三水港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN(佛山三山港)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN（顺德）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUNDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN,GAOMING的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "FOSHAN,JIUJIANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "FOSHAN"}]}
@@ -536,7 +537,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIFA0的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIFA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIKOU(XIUYING)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIKOU"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIKOU(YANGPU)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIKOU"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIKOU(洋浦)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGPUGANG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIKOU(杨浦)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGPUGANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAINAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO HAINA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAINAN,YANGPU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGPUGANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HAIPHONE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIPHONG"}]}
@@ -614,7 +615,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HOUSTON,TX的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HOUSTON,TX"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HP的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIPHONG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HPH的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HAIPHONG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HUADUBAJIANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HUADUBAJIANG（HUADUBAJIANG））"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HUADUBAJIANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HUADUBAJIANG（HUADUBAJIANG）"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HUMEN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HUMEN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "HUNTSVILLE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HUNTSVILLE,AL"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Hyderabad的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ICD HYDERABAD"}]}
@@ -679,7 +680,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISKENDERUN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISKENDERUN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBUL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISTANBUL"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBUL MARPORT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISTANBUL"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBUL （KUM）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISTANBUL"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBUL (KUM)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISTANBUL"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBULKUMPORT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KUMPORT"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ISTANBULKUMPORT/AMBARLI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ISTANBUL"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ITAGUAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ITAGUAI"}]}
@@ -721,7 +722,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBEL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBEL ALI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBEL ALIMBL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBEL ALI，DUBAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBEL ALI(DUBAI)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEBELALI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JED的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEDDAH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JEDDAH的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEDDAH"}]}
@@ -748,7 +749,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JIB的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DJIBOUTI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JIMENA DE LA FRONTERA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ETAJIMA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JIUJIANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JIUJIANG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JIUZHOU(九洲)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JIUZHOU(JIUZHOU)"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JIUZHOU(九州)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JIUZHOU(JIUZHOU)"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JKT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JAKARTA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "JOAQJ的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AQABA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Jodhpur的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ICD JODHPUR"}]}
@@ -783,7 +784,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KARACHIQ的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KARACHI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KARACHIS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KARACHI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KARACHISAPT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KARACHI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KARACHI（SAPT)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KARACHI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KARACHI(SAPT)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KARACHI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Kashima, Ibaraki的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KASHIMA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "KATHUWAS的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KATHUWAS"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Kathuwas ICD的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KATHUWAS"}]}
@@ -920,6 +921,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Luderitz,NA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LUDERITZ"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Ludhiana的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ICD LUDHIANA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "LYTTELTON的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LYTTELTON"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "MA'AN'SHAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MAANSHAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "MAA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CHENNAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "MAALOEY的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MAALOY"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Maaloey,NO的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MAALOY"}]}
@@ -1126,6 +1128,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "NSA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NHAVA SHEVA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "NSH的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NHAVA SHEVA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "NUKU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NUKUALOFA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "NUKU'ALOFA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NUKUALOFA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "OAKLAND,CA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "OAKLAND"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "OAXACA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "OAXEN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ODESSA,FL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ODESSA"}]}
@@ -1335,7 +1338,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO DE JANEIRO的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO DE JANEIRO"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO GRANDE的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO GRANDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Rio Grande(BR)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO GRANDE"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO GRANDE,AR的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO GRANDE，AR"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO GRANDE,AR的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO GRANDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO GRANDE,BRAZIL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO GRANDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO HAINA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO HAINA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "RIO0的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIO HAINA"}]}
@@ -1436,7 +1439,9 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SGSIN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SINGAPORE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANG HAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANGHAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANGHAI SEAPORT,CHINA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANGHAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANGHAI,CHINA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANHAI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANGHAI"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHANTOU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHANTOU"}]}
@@ -1458,6 +1463,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHUNDE,BEIJIAO的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUNDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHUNDE,LELIU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUNDE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHUNDE,RONGQI的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUNDE"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHUWAIKH的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUWAIKH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SHUWAIKH,KUWAIT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SHUWAIKH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SIBU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SIBU"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "SIBU, SARAWAK的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SIBU"}]}
@@ -1506,6 +1512,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST. GEORGES的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.GEORGE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST. JACKSONVILLE, FL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JACKSONVILLE,FL"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "St. Petersburg的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.PETERSBURG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST.GEORGE'S的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.GEORGE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST.GEORGE,UT的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.GEORGE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST.GEORGES的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.GEORGES"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ST.PETERSBURG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ST.PETERSBURG"}]}
@@ -1620,7 +1627,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Ujung Pandang/Makassar的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MAKASSAR"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ULSAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "ULSAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "UM AL QUWAIN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "UMM AI  QAIWAIN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "UMM  AI  QAIWAIN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Umm ai qaiwain的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Umm al Qaiwain的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "UMM AL QAIWAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "UMM AL QUWAIN"}]}
@@ -1669,6 +1676,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "VITORIA,BRAZIL的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VITORIA"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "VIZAG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VISAKHAPATNAM"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "VIZAG SEAPORT, INDIA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VISAKHAPATNAM"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Vizag的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VISAKHAPATNAM"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "VLADIVOSTOCK的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VLADIVOSTOK"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "VLADIVOSTOK的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VLADIVOSTOK"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "Vladivostok(Fish Port)的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "VLADIVOSTOK"}]}
@@ -1694,7 +1702,7 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "WINNIPEG,MB的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "WINNIPEG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "WUZHOU的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "WUZHOU"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "XIAMEN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "XIAMEN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "XINGANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "XINGANG "}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "XINGANG的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "XINGANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "XSP的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SINGAPORE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "YANGGON的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGON"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "YANGON MIP的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGON"}]}
@@ -1749,50 +1757,51 @@
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "不老湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "乌拉湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "仰光的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "YANGON"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "卡加延的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CAGAYAN DE ORO"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "吉大的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CHITTAGONG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "名都鲁的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BINTULU"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "太平（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "宿雾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CEBU"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "将军港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SANTOS"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "卡加延德奥罗的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CAGAYAN DE ORO"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "吉大港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CHITTAGONG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "宾都卢的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BINTULU"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "虎门（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "宿务的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CEBU"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "圣多斯的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SANTOS"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴淡的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BATAM"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生N的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生北的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生North的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生W的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG WEST"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生西的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG WEST"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生West的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG WEST"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生北的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生北港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生北港口的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG NORTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生西的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG WEST"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生西港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PORT KELANG WEST"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴西古荡的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PASIR GUDANG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "拉塔班的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LAT KRABANG"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "海腾（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PASIR GUDANG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "拉差巴当的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LAT KRABANG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "太平（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "澳门(海单）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MACAO"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "穆阿拉的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MUARA HARBOUR"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "穆阿拉港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MUARA HARBOUR"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "胡志明市的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "HOCHIMINH"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "虎门（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "诗巫的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SIBU"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "海腾（东莞）的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DONGGUAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "泗务的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SIBU"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "贝拉港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BEIRA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "迪拜的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "金万巴罗的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KOTA KINABALU"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "阿基曼的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AJMAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "贝拉的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "JEBEL ALI"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "哥打基纳巴鲁的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "KOTA KINABALU"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "阿治曼的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "AJMAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "阿巴斯的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BANDAR ABBAS"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "马尼拉北的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MANILA NORTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "马尼拉北港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MANILA NORTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "马尼拉南的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MANILA SOUTH"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "马尼拉南港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MANILA SOUTH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "那瓦西瓦的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NHAVA SHEVA"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "勿拉湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "不老湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "三宝垄的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "SEMARANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "林查班的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LAEM CHABANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "吉大港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "CHITTAGONG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "N.SHEVA的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "NHAVA SHEVA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "不老湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "乌拉湾的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BELAWAN"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "利雅得的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "RIYADH"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "达曼的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "DAMMAM"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "帕西古当的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PASIR GUDANG"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "巴生港的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PASIR GUDANG"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "坤甸的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "PONTIANAK"}]}
-{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "蒙德拉的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MUNDRA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "孟达拉的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "MUNDRA"}]}
+{"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "莱的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LAE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "莱城的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "LAE"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "MMLP-MIHAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BOMBAY"}]}
 {"messages": [{"role": "system", "content": "Answer the name of the port exactly"}, {"role": "user", "content": "ICD MMLP-MIHAN的主要运价是多少 What port is this?"}, {"role": "assistant", "content": "BOMBAY"}]}
