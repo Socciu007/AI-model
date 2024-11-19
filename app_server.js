@@ -1,12 +1,16 @@
 import { spawn } from 'child_process';
 import express from 'express';
+import bodyParser from 'body-parser';
 import http from 'http';
 import zalo from 'zalo-sdk';
 
 const app = express();
-const PORT = 3001;
+const PORT = 3005;
 let soxProcess = null;
 let fileName = null;
+
+// Use body-parser middleware to parse JSON bodies
+app.use(bodyParser.json());
 
 // Func send audio chunks to the server
 const sendAudioChunk = (data, isFinalChunk = false) => {
@@ -74,7 +78,6 @@ const stopCapture = () => {
   }
 };
 
-
 // Define routes using Express
 app.post('/start-capture', (req, res) => {
   startCapture();
@@ -86,6 +89,7 @@ app.post('/stop-capture', (req, res) => {
   res.send('Audio capture stopped');
 });
 
+// Func send message to zalo
 app.post('/send-message', (req, res) => {
   // Create a new Zalo instance
   const zlConfig = {
@@ -104,6 +108,62 @@ app.post('/send-message', (req, res) => {
     .catch((error) => {
       console.error('Error:', error);
     });
+});
+
+// Verify the webhook endpoint (for Facebook verification)
+app.get('/webhook', (req, res) => {
+  const VERIFY_TOKEN = process.env.VERIFY_TOKEN || '123123';
+
+  // Parse the query params
+  const mode = req.query['hub.mode'];
+  const token = req.query['hub.verify_token'];
+  const challenge = req.query['hub.challenge'];
+
+  // Check if a token and mode were sent
+  if (mode && token) {
+    // Check the mode and token sent are correct
+    if (mode === 'subscribe' && token === VERIFY_TOKEN) {
+      console.log('WEBHOOK_VERIFIED');
+      // Respond with the challenge token from the request
+      res.status(200).send(challenge);
+    } else {
+      // Respond with '403 Forbidden' if verify tokens do not match
+      res.sendStatus(403);
+    }
+  }
+});
+
+// Define the webhook endpoint to receive messages
+app.post('/webhook', (req, res) => {
+  const body = req.body;
+  console.log('Received webhook event:', body);
+
+  // Check if this is an event from a page subscription
+  if (body.object === 'page') {
+    // Iterate over each entry - there may be multiple if batched
+    body.entry.forEach((entry) => {
+      // Get the message. entry.messaging is an array, but will only ever contain one message, so we get index 0
+      const webhookEvent = entry.messaging[0];
+      console.log('Received webhook event:', webhookEvent);
+
+      // Get the sender PSID
+      const senderPsid = webhookEvent.sender.id;
+      console.log('Sender PSID:', senderPsid);
+
+      // Check if the event is a message or postback and handle accordingly
+      if (webhookEvent.message) {
+        handleMessage(senderPsid, webhookEvent.message);
+      } else if (webhookEvent.postback) {
+        handlePostback(senderPsid, webhookEvent.postback);
+      }
+    });
+
+    // Return a '200 OK' response to all requests
+    res.status(200).send('EVENT_RECEIVED');
+  } else {
+    // Return a '404 Not Found' if the event is not from a page subscription
+    res.sendStatus(404);
+  }
 });
 
 // Start the Express server
