@@ -24,7 +24,7 @@ CORS(app)
 
 # Load the model and tokenizer
 local_model= "./seamless_m4t_model" # Load the model if it exists in local
-model_name= "facebook/hf-seamless-m4t-medium"
+model_name= "facebook/hf-seamless-m4t-medium" # Model on huggingface
 processor = AutoProcessor.from_pretrained(local_model)
 model = SeamlessM4TModel.from_pretrained(local_model)
 
